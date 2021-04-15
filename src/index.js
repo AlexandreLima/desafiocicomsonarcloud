@@ -1,6 +1,7 @@
-const express =  require('express');
-const app =  express();
-const port =  process.env.PORT  ||  8080
+let express =  require('express');
+let app =  express();
+app.disable("x-powered-by");
+let port =  process.env.PORT  ||  8080
 
 app.get('/', (req, res) => {
     return res.status(200).json({ nome:  'Alexandre Lima' });
