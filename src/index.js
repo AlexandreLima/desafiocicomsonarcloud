@@ -8,6 +8,6 @@ app.get('/', (req, res) => {
 });
 
 let server = app.listen(port, () => {
-    console.log(`Application running on ${port}`);
+    console.log(`Aplicação rodando na porta ${port}`);
 });
 module.exports  = server;
